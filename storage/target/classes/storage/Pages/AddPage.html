@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:extend>
+    <h3 width="100%" align ="center">Форма получения товара</h3>
+    <form wicket:id="newRecordForm">
+        <p width="100%" align ="center" wicket:id="feedback"></p>
+            <table align="center" width="100%" cellspacing="0" cellpadding="4">
+                <tr>
+                    <td align="right" width="100">Наименование товара:</td>
+                    <td><input type="text" wicket:id="name" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td align="right">Количество прихода:</td>
+                    <td><input type="text" wicket:id="size" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Цена товара:</td>
+                    <td><input type="text" wicket:id="price" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td align="right">Дата поступления:</td>
+                    <td><input type="text" wicket:id="date" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input class="but" wicket:id="send" type="button"  value="Отправить"></td>
+                </tr>
+            </table>
+    </form>
+
+    <form wicket:id = "deleteForm">
+        <h3 width="100%" align ="center">Форма расхода товара</h3>
+            <table align="center" width="100%" cellspacing="0" cellpadding="4">
+                <tr>
+                    <td align="right" width="100">Наименование товара:</td>
+                    <td><select wicket:id="recordName"></select></td>
+                </tr>
+                <tr>
+                    <td align="right">Количество расхода:</td>
+                    <td><input type="text" wicket:id="existingSize" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Цена расхода:</td>
+                    <td><input type="text" wicket:id="existingPrice" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td align="right">Дата расхода:</td>
+                    <td><input type="text" wicket:id="outcome" maxlength="50" size="20"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input class="but" type="button" wicket:id="senddel" value="Отправить"></td>
+                </tr>
+            </table>
+    </form>
+</wicket:extend>
+</body>
+</html>
